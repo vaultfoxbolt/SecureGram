@@ -1,0 +1,12 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SecureGram</title><link rel="stylesheet" href="style.css"></head><body>
+<div id="auth" class="auth"><div class="card"><div class="logo">✈️</div><h1>SecureGram</h1><p class="sub">End-to-end encrypted messenger</p>
+<input id="au" placeholder="Username" autocomplete="username"><input id="ap" type="password" placeholder="Password" autocomplete="current-password">
+<button id="loginBtn">Log in</button><button id="signupBtn" class="ghost">Sign up</button><p id="aerr" class="err"></p></div></div>
+<div id="app" class="app hidden"><aside id="side"><div class="top"><b id="me"></b><button id="logout" class="icon" title="Logout">⎋</button></div>
+<div class="newchat"><input id="newu" placeholder="Start chat by username"><button id="addBtn">+</button></div><ul id="chats"></ul></aside>
+<main id="main"><div class="empty" id="empty">Select a chat to start messaging 🔒</div>
+<div id="chat" class="hidden"><header><button id="back" class="icon">←</button><div><b id="peer"></b><small>🔒 end-to-end encrypted</small></div></header>
+<div id="msgs"></div><form id="composer"><label class="icon attach">📎<input type="file" id="file" accept="image/*,video/*" hidden></label>
+<input id="text" placeholder="Message" autocomplete="off"><button class="send">➤</button></form></div></main></div>
+<div id="viewer" class="hidden"></div>
+<script src="e2ee.js"></script><script src="app.js"></script></body></html>
